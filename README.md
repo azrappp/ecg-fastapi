@@ -1,7 +1,3 @@
-Here is your **corrected and fully valid Markdown**, wrapped in **one clean code block** so you can copy it safely.
-
-All code fences are properly opened/closed — no broken nesting.
-
 ````markdown
 # 🫀 12-Lead ECG Classification API
 
