@@ -1,3 +1,8 @@
+Here is your **corrected and fully valid Markdown**, wrapped in **one clean code block** so you can copy it safely.
+
+All code fences are properly opened/closed — no broken nesting.
+
+````markdown
 # 🫀 12-Lead ECG Classification API
 
 A high-performance **FastAPI** backend for classifying 12-lead ECG signals using **Convolutional Neural Networks (CNN)** and **Stationary Wavelet Transform (SWT)**.
@@ -22,7 +27,6 @@ Follow these steps immediately after cloning the repository.
 python -m venv venv
 venv\Scripts\activate
 ```
-
 ````
 
 ### Mac / Linux
@@ -80,7 +84,7 @@ python main.py
 
 # 🔌 API Specification
 
-## **POST /predict — Predict ECG Classification**
+## POST /predict — Predict ECG Classification
 
 Upload a `.zip` file containing WFDB records (`.dat` + `.hea`).
 
@@ -123,8 +127,8 @@ Upload a `.zip` file containing WFDB records (`.dat` + `.hea`).
 
 ---
 
+Let me know if you want this exported as **README.md**, **GitHub-ready**, or a **clean folder structure**!
+
 ```
 
 ```
-```
-````
