@@ -1,0 +1,25 @@
+# 1. Abaikan Virtual Environment (PENTING!)
+tflite-env/
+venv/
+env/
+.env
+
+# 2. Abaikan Sampah Python
+__pycache__/
+*.py[cod]
+*.so
+
+# 3. Abaikan File Mac/Windows System
+.DS_Store
+Thumbs.db
+
+# 4. Abaikan Folder Temp dari API Anda (yang dibuat uuid tadi)
+temp_*/
+
+# 5. Abaikan File Test/Sampah Upload
+*.zip
+*.dat
+*.hea
+
+# 6. Abaikan Jupyter Notebook Checkpoints (jika ada)
+.ipynb_checkpoints/
