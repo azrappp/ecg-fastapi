@@ -121,6 +121,9 @@ Upload a `.zip` file containing WFDB records (`.dat` + `.hea`).
 - **prediction** → predicted ECG class (`MI`, `NORM`, `STTC`)
 - **signal_data** → 12 arrays (Lead I → Lead V6), ready for frontend plotting
 
+---
+
 ```
 
+Let me know if you want a **README.md file**, **API diagram**, or **folder structure template**!
 ```
