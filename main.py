@@ -9,6 +9,8 @@ from scipy.signal import butter, lfilter
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from contextlib import asynccontextmanager
 import tensorflow as tf
+from fastapi.middleware.cors import CORSMiddleware # <--- 1. Import ini
+
 
 # ==========================================
 # 1. KONFIGURASI & KONSTANTA
@@ -47,7 +49,13 @@ async def lifespan(app: FastAPI):
     print("🛑 Server shutting down...")
 
 app = FastAPI(lifespan=lifespan)
-
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Mengizinkan semua domain (React, Postman, HP, dll)
+    allow_credentials=True,
+    allow_methods=["*"],  # Mengizinkan semua method (GET, POST, dll)
+    allow_headers=["*"],  # Mengizinkan semua header
+)
 # ==========================================
 # 3. FUNGSI PREPROCESSING (COPY-PASTE DARI TRAINING)
 # ==========================================
