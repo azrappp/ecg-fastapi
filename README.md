@@ -1,3 +1,4 @@
+````markdown
 # 🫀 12-Lead ECG Classification API
 
 A high-performance **FastAPI** backend for classifying 12-lead ECG signals using **Convolutional Neural Networks (CNN)** and **Stationary Wavelet Transform (SWT)**.
@@ -22,7 +23,6 @@ Follow these steps immediately after cloning the repository.
 python -m venv venv
 venv\Scripts\activate
 ```
-
 ````
 
 ### Mac / Linux
@@ -123,4 +123,6 @@ Upload a `.zip` file containing WFDB records (`.dat` + `.hea`).
 
 ---
 
-````
+```
+
+```
