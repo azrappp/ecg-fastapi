@@ -220,7 +220,8 @@ async def predict_ecg(file: UploadFile = File(...)):
         predicted_index = np.argmax(avg_prediction)
         predicted_label = CLASS_NAMES[predicted_index]
         confidence = float(avg_prediction[predicted_index])
-        signal_for_chart = filtered.T.tolist() 
+        signal_for_chart = filtered.T.tolist()
+        record = wfdb.rdrecord(record_path) 
         # Opsi lain: Majority Voting (Detak terbanyak menang)
         # beat_classes = np.argmax(predictions, axis=1)
         # counts = np.bincount(beat_classes)
@@ -235,6 +236,7 @@ async def predict_ecg(file: UploadFile = File(...)):
             "probabilities": {
                 class_name: float(prob) for class_name, prob in zip(CLASS_NAMES, avg_prediction)
             },
+            "lead_names": record.sig_name,
             "signal_data": signal_for_chart
         }
 
