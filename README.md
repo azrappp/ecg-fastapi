@@ -137,5 +137,4 @@ Upload a `.zip` file containing WFDB records (`.dat` + `.hea`) and select a mode
   * **signal\_data**: Array of 12 arrays (Lead I through Lead V6), pre-filtered and ready for SciChart rendering.
 
 
-```
-```
+
